@@ -11,14 +11,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --wine:#2b111b;
-      --wine-2:#3a1724;
-      --cream:#f7f2ed;
-      --soft:#e9dfda;
-      --gold:#c7a98b;
-      --white:#fff;
-      --dark:#201016;
+.gallery{
+  background:#f3eeea;
+  color:#321722;
+}
+  .gallery-date{
+  width:100%;
+  text-align:center;
+
+  margin:-8px 0 32px;
+
+  font-family:"DM Sans",sans-serif;
+  font-size:12px;
+  letter-spacing:.5px;
+
+  color:#321722;
+  opacity:.9;
+}
+
+.gallery-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
