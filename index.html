@@ -11,30 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
-.gallery{
-  background:#f3eeea;
-  color:#321722;
-}
-  .gallery-date{
-  width:100%;
-  text-align:center;
-
-  margin:-8px 0 32px;
-
-  font-family:"DM Sans",sans-serif;
-  font-size:12px;
-  letter-spacing:.5px;
-
-  color:#321722;
-  opacity:.9;
-}
-
-.gallery-grid{
-  width:100%;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-}
+    :root{
+      --wine:#2b111b;
+      --wine-2:#3a1724;
+      --cream:#f7f2ed;
+      --soft:#e9dfda;
+      --gold:#c7a98b;
+      --white:#fff;
+      --dark:#201016;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
@@ -84,7 +68,8 @@
       z-index:100;
       background:
         radial-gradient(circle at 50% 35%, rgba(105,48,66,.25), transparent 40%),
-        var(--wine);
+        #2b111b;
+      color:var(--cream);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -433,6 +418,17 @@
     .gallery{
       background:#f3eeea;
       color:#321722;
+    }
+
+    .gallery-date{
+      width:100%;
+      text-align:center;
+      margin:-8px 0 32px;
+      font-family:"DM Sans",sans-serif;
+      font-size:12px;
+      letter-spacing:.5px;
+      color:#321722;
+      opacity:.9;
     }
     .gallery-grid{
       width:100%;
@@ -806,55 +802,24 @@
       </section>
 
       <section class="gallery decorated">
-      <div class="floral-corner corner-tl">✿</div><div class="floral-corner corner-br">❀</div>
-        <div class="section-kicker">Captured moments</div>
-     <div class="section-title">Our Gallery</div>
+        <div class="floral-corner corner-tl">✿</div>
+        <div class="floral-corner corner-br">❀</div>
 
-      <div class="gallery-date">
-        ENGAGEMENT · 4 JULI 2026
-      </div>
+        <div class="section-kicker">Captured moments</div>
+        <div class="section-title">Our Gallery</div>
+
+        <div class="gallery-date">
+          ENGAGEMENT · 4 JULI 2026
+        </div>
 
         <!-- Ganti kotak di bawah dengan foto kalian jika sudah tersedia -->
-        <section class="gallery decorated">
-
-  <div class="floral-corner corner-tl">✿</div>
-  <div class="floral-corner corner-br">❀</div>
-
-  <div class="section-kicker">
-    Captured moments
-  </div>
-
-  <div class="section-title">
-    Our Gallery
-  </div>
-
-  <div class="gallery-date">
-    ENGAGEMENT · 4 JULI 2026
-  </div>
-
-  <!-- Ganti kotak di bawah dengan foto kalian jika sudah tersedia -->
-
-  <div class="gallery-grid">
-
-    <div class="photo">
-      <span>Irine</span>
-    </div>
-
-    <div class="photo">
-      <span>Afif</span>
-    </div>
-
-    <div class="photo">
-      <span>Together</span>
-    </div>
-
-    <div class="photo">
-      <span>Forever</span>
-    </div>
-
-  </div>
-
-</section>
+        <div class="gallery-grid">
+          <div class="photo"><span>Irine</span></div>
+          <div class="photo"><span>Afif</span></div>
+          <div class="photo"><span>Together</span></div>
+          <div class="photo"><span>Forever</span></div>
+        </div>
+      </section>
 
       <section class="location decorated">
       <div class="ornament ornament-top">❦</div><div class="ornament ornament-bottom">❧</div>
