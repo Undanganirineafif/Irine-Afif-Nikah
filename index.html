@@ -223,7 +223,11 @@
       font-family:"Great Vibes",cursive;
       font-size:68px;
       line-height:.9;
+      width:100%;
+      text-align:center;
       margin:18px 0 24px;
+      position:relative;
+      left:0;
     }
 
     .date{
@@ -284,11 +288,20 @@
       box-shadow:0 0 0 8px rgba(255,255,255,.025);
     }
 
-    .lace-content{transform:rotate(3deg)}
+    .lace-content{
+      transform:rotate(3deg);
+      width:100%;
+      text-align:center;
+    }
+
     .save-title{
       font-family:"Great Vibes",cursive;
       font-size:57px;
       line-height:.9;
+      width:100%;
+      text-align:center;
+      position:relative;
+      left:0;
     }
 
     .save .date{margin-top:22px;font-size:17px}
@@ -638,37 +651,63 @@
     <!-- ISI UNDANGAN -->
     <main id="main">
 
-      <section class="hero decorated">
-      <div class="ornament ornament-top">❦</div><div class="ornament ornament-bottom">❧</div>
-        <div class="hero-frame">
-          <div class="subtitle">Save Our Date</div>
-          <div class="hero-title">Irine &amp; Afif</div>
-          <button class="scroll-note" type="button" onclick="scrollToSection('saveSection')" aria-label="Lanjut ke bagian berikutnya">
-            SCROLL TO DISCOVER ↓
-          </button>
-        </div>
-      </section>
+<section class="hero decorated">
+  <div class="ornament ornament-top">❦</div>
+  <div class="ornament ornament-bottom">❧</div>
 
-      <section class="save decorated" id="saveSection">
-      <div class="floral-corner corner-tl">✿</div><div class="floral-corner corner-br">❀</div>
-        <div class="lace">
-          <div class="lace-content">
-            <div class="save-title">Save Our<br>Date</div>
-            <div class="date">28 NOVEMBER 2026</div>
-          </div>
-        </div>
+  <div class="hero-frame">
+    <div class="subtitle">Save Our Date</div>
 
-        <div class="getting">WE ARE GETTING MARRIED!</div>
-        <div class="couple">Irine &amp; Afif</div>
-        <p class="description">
-          Dengan penuh kebahagiaan, kami mengundang Anda untuk
-          menjadi bagian dari hari istimewa kami.
-        </p>
+    <div class="hero-title">
+      Irine &amp; Afif
+    </div>
 
-        <button class="btn" onclick="scrollToSection('countdown')">
-          SHARE YOUR DETAILS
-        </button>
-      </section>
+    <button
+      class="scroll-note"
+      type="button"
+      onclick="scrollToSection('saveSection')"
+      aria-label="Lanjut ke bagian berikutnya"
+    >
+      SCROLL TO DISCOVER ↓
+    </button>
+  </div>
+</section>
+
+
+<section class="save decorated" id="saveSection">
+
+  <div class="floral-corner corner-tl">✿</div>
+  <div class="floral-corner corner-br">❀</div>
+
+  <div class="lace">
+    <div class="lace-content">
+      <div class="save-title">
+        Save Our<br>Date
+      </div>
+    </div>
+  </div>
+
+  <div class="getting">
+    WE ARE GETTING MARRIED!
+  </div>
+
+  <div class="couple">
+    Irine &amp; Afif
+  </div>
+
+  <p class="description">
+    Dengan penuh kebahagiaan, kami mengundang Anda untuk
+    menjadi bagian dari hari istimewa kami.
+  </p>
+
+  <button
+    class="btn"
+    onclick="scrollToSection('countdown')"
+  >
+    SHARE YOUR DETAILS
+  </button>
+
+</section>
 
       <section class="countdown" id="countdown">
         <div class="count-title">Counting down to happily ever after</div>
