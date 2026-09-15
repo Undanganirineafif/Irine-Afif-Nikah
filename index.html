@@ -205,45 +205,36 @@
     }
 
     .hero-frame{
-      width:88%;
-      max-width:380px;
-      border:1px solid rgba(231,218,207,.35);
-      padding:58px 24px 52px;
-      position:relative;
-    }
-    .hero-frame::before{
-      content:"";
-      position:absolute;
-      inset:12px;
-      border:1px solid rgba(231,218,207,.14);
-      pointer-events:none;
+      width:100%;
+      min-height:72vh;
+      border:1px solid rgba(245,228,204,.45);
+      outline:1px solid rgba(245,228,204,.14);
+      outline-offset:9px;
+
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+
+      padding:50px 20px;
     }
 
-    .hero-title{
+  .hero-title{
       font-family:"Great Vibes",cursive;
       font-size:68px;
       line-height:.9;
       width:100%;
       text-align:center;
+
+      /* geser sedikit ke bawah */
+      transform:translateY(18px);
+
       margin:18px 0 24px;
       position:relative;
       left:0;
     }
 
-    .date{
-      font-family:"Cormorant Garamond",serif;
-      font-size:20px;
-      letter-spacing:3px;
-    }
-
-    .subtitle{
-      font-family:"Cormorant Garamond",serif;
-      letter-spacing:2px;
-      font-size:14px;
-      text-transform:uppercase;
-    }
-
-    .scroll-note{
+  .scroll-note{
       margin-top:55px;
       font-size:11px;
       letter-spacing:2px;
@@ -255,14 +246,6 @@
       cursor:pointer;
       font-family:"DM Sans",sans-serif;
       transition:opacity .25s ease, transform .25s ease;
-    }
-    .scroll-note:hover{
-      opacity:1;
-      transform:translateY(3px);
-    }
-    .scroll-note:focus-visible{
-      outline:1px solid rgba(255,255,255,.5);
-      outline-offset:4px;
     }
 
     .save{
